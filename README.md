@@ -92,7 +92,7 @@ The raw CSV was loaded into a single staging table (`orders`) with every column 
 
 ## 📊 The Dashboard
 
-![Dashboard Overview](Images/dashboard_overview.png)
+![Dashboard Overview](images/dashboard_overview.png)
 
 The dashboard has slicers for **Year, Region,** and **Sub-Category**, five KPI cards at the top, and four charts: Discount vs Profit (scatter), Sales vs Profit by Sub-Category, Profit by Region, and Monthly Sales & Profit trend.
 
@@ -116,7 +116,7 @@ The overview shows a healthy 12.47% margin overall, but that number hides some v
 
 ### Biggest loss: Central → 2014 → Binders
 
-![Root Cause - Loss](Images/root_cause_loss.png)
+![Root Cause - Loss](images/root_cause_loss.png)
 
 | Metric | Value |
 |---|---|
@@ -130,7 +130,7 @@ This segment is deeply unprofitable — losing money on every dollar of sales. T
 
 ### Biggest profit: West → 2017 → Copiers
 
-![Root Cause - Profit](Images/root_cause_profit.png)
+![Root Cause - Profit](images/root_cause_profit.png)
 
 | Metric | Value |
 |---|---|
@@ -164,35 +164,3 @@ The same business, a completely different outcome — discounts here stay low (a
 ---
 
 ## 📁 Repository Structure
-
-```
-Retail Sales Data Warehouse/
-│
-├── Images/
-│   ├── dashboard_overview.png
-│   ├── root_cause_loss.png
-│   └── root_cause_profit.png
-│
-├── Power BI/
-│   └── retail_sales_analysis.pbix
-│
-├── SQL/
-│   └── retail_sales_cleaning_eda.sql
-│
-├── Retail-Supply-Chain-Sales-Dataset.csv
-└── README.md
-```
-
-## 🚀 How to Reproduce
-
-1. Create a PostgreSQL database and open `SQL/retail_sales_cleaning_eda.sql` in pgAdmin's Query Tool.
-2. Update the file path in the `COPY` statement to point to your local copy of `Retail-Supply-Chain-Sales-Dataset.csv`.
-3. Run the script top to bottom — it loads the raw data, builds the relational schema, cleans all 3 tables, and runs the EDA queries.
-4. Open `Power BI/retail_sales_analysis.pbix` in Power BI Desktop, connect it to your database (or the cleaned tables), and explore the dashboard.
-
----
-
-## 🔗 Connect
-
-- LinkedIn: [linkedin.com/in/saitejabonagiri](https://linkedin.com/in/saitejabonagiri/)
-- GitHub: [github.com/Saiteja911-blip](https://github.com/Saiteja911-blip/)
